@@ -4,71 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Your Name - Data & Code Portfolio</title>
-    
-    <meta name="description" content="Portfolio of [Your Name], specializing in Data Analysis, Python, and Technical Solutions. View my projects and contributions.">
+    <title>Portfolio - CS Student & Data Analyst</title>
+    <meta name="description" content="Portfolio of a Computer Science student and DataCamp Scholar specializing in SQL, Power BI, and Cloud Analytics. Seeking OJT opportunities.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
-        /* CSS STYLES: This makes the site look good */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background-color: #f4f4f9; }
-        header { background: #2c3e50; color: #fff; padding: 2rem 0; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        header p { font-size: 1.2rem; opacity: 0.8; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        /* COLOR PALETTE: Professional Blue & Clean White */
+        :root {
+            --primary: #0f172a; /* Dark Slate */
+            --accent: #3b82f6;  /* Bright Blue */
+            --bg: #f8fafc;
+            --text: #334155;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--text); background-color: var(--bg); }
         
-        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        /* HEADER */
+        header { background: var(--primary); color: #fff; padding: 4rem 0; text-align: center; }
+        header h1 { margin: 0; font-size: 3rem; font-weight: 700; }
+        header p { font-size: 1.3rem; color: #cbd5e1; margin-top: 10px; }
+        header .status-badge { background: var(--accent); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-top: 15px; font-weight: bold;}
+
+        /* LAYOUT */
+        .container { max-width: 900px; margin: -50px auto 0; padding: 20px; position: relative; }
         
-        .project { margin-bottom: 15px; }
-        .project-title { font-weight: bold; font-size: 1.1rem; }
-        .btn { display: inline-block; background: #3498db; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-size: 0.9rem;}
-        .btn:hover { background: #2980b9; }
+        .section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 0; }
         
-        footer { text-align: center; padding: 20px; color: #777; font-size: 0.9rem; }
+        /* SKILLS GRID */
+        .skills-grid { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        .skill-tag { background: #e2e8f0; color: var(--primary); padding: 5px 12px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; }
+
+        /* PROJECTS */
+        .project { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #eee; }
+        .project:last-child { border-bottom: none; }
+        .project-title { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
+        .project-meta { font-size: 0.85rem; color: #64748b; margin-bottom: 8px; }
+        
+        /* BUTTONS */
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; margin-top: 10px; font-size: 0.9rem; transition: background 0.3s;}
+        .btn:hover { background: var(--accent); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: white; }
+
+        footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Your Full Name</h1>
-        <p>Aspiring Data Analyst | Tech Enthusiast</p>
+        <h1>CARL JOSHUA DIMAS RICAFRENTE</h1> 
+        <p>Computer Science Student | Aspiring Cloud-Enabled Data Analyst</p>
+        <div class="status-badge">Available for OJT (360 Hours)</div>
     </header>
 
     <div class="container">
         
         <div class="section">
             <h2>About Me</h2>
-            <p>Hello! I am a student passionate about technology and data. I enjoy solving complex problems and building tools that help people work more efficiently. Welcome to my portfolio of contributions.</p>
+            <p>I am a Computer Science student passionate about turning raw data into actionable insights. As a <strong>DataCamp Scholar</strong>, I have built a strong foundation in SQL and Python, and I am currently expanding my expertise into cloud computing through <strong>AWS Cloud & AI Practitioner</strong> training.</p>
+            <p>I am actively seeking a Data Analytics OJT opportunity where I can apply my skills in data visualization, database management, and statistical analysis.</p>
+            
+            <div class="skills-grid">
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">SQL (Advanced)</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">AWS Cloud</span>
+                <span class="skill-tag">CRISP-DM</span>
+                <span class="skill-tag">Generative AI</span>
+            </div>
         </div>
 
         <div class="section">
             <h2>Featured Contributions</h2>
             
             <div class="project">
-                <div class="project-title">Project Name 1 (e.g., Sales Data Analysis)</div>
-                <p>A brief description of what you did. Example: Analyzed 50,000 sales records to identify seasonal trends using Python and Pandas.</p>
-                <a href="#" class="btn">View Project</a>
+                <div class="project-title">Superstore Profitability Analysis</div>
+                <div class="project-meta">Tools: Power BI, Data Cleaning, Visualization</div>
+                <p>Designed an interactive dashboard to analyze sales data for a retail superstore. The project involved cleaning raw data and visualizing profit margins across different regions and categories to identify loss-making products.</p>
+                <a href="#" class="btn">View Dashboard</a>
             </div>
-            <hr>
             
             <div class="project">
-                <div class="project-title">Project Name 2 (e.g., Website Automation)</div>
-                <p>Description of the project. Example: Created a script to automate daily report generation, saving 2 hours of work per week.</p>
+                <div class="project-title">Object Detection for RC Car Navigation</div>
+                <div class="project-meta">Tools: Computer Vision, Python, AI</div>
+                <p>Collaborated on a thesis project focused on autonomous navigation. My contribution focused on the object detection module, enabling the RC car to identify obstacles for safe localization and path planning.</p>
                 <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Cloud & AI Practitioner Journey</div>
+                <div class="project-meta">Status: In Progress (December 2025)</div>
+                <p>Currently undertaking intensive training via AWS Free Tier to bridge the gap between traditional data analysis and cloud-native AI solutions.</p>
             </div>
 
         </div>
 
-        <div class="section">
-            <h2>Connect</h2>
-            <p>Find me on <a href="#">LinkedIn</a> or check out my code on <a href="#">GitHub</a>.</p>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <div class="section" style="text-align: center;">
+            <h2>Let's Connect</h2>
+            <p>I am ready to contribute to your data team immediately.</p>
+            <br>
+            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+            <a href="#" class="btn btn-outline">LinkedIn Profile</a>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2025 Your Name. Hosted on GitHub Pages.</p>
+        <p>&copy; 2025 [Your Name]. Built with GitHub Pages.</p>
     </footer>
 
 </body>
