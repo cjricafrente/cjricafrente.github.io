@@ -3,142 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Portfolio - CS Student & Data Analyst</title>
-    <meta name="description" content="Portfolio of a Computer Science student and DataCamp Scholar specializing in SQL, Power BI, and Cloud Analytics. Seeking OJT opportunities.">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <title>Carl Joshua Ricafrente | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* COLOR PALETTE: Professional Blue & Clean White */
-        :root {
-            --primary: #0f172a; /* Dark Slate */
-            --accent: #3b82f6;  /* Bright Blue */
-            --bg: #f8fafc;
-            --text: #334155;
+        body {
+            background-color: #f8f9fa; /* Soft light gray for a clean, non-straining look */
+            color: #212529; /* Dark gray text for readability */
         }
-
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--text); background-color: var(--bg); }
-        
-        /* HEADER */
-        header { background: var(--primary); color: #fff; padding: 4rem 0; text-align: center; }
-        header h1 { margin: 0; font-size: 3rem; font-weight: 700; }
-        header p { font-size: 1.3rem; color: #cbd5e1; margin-top: 10px; }
-        header .status-badge { background: var(--accent); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-top: 15px; font-weight: bold;}
-
-        /* LAYOUT */
-        .container { max-width: 900px; margin: -50px auto 0; padding: 20px; position: relative; }
-        
-        .section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 0; }
-        
-        /* SKILLS GRID */
-        .skills-grid { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
-        .skill-tag { background: #e2e8f0; color: var(--primary); padding: 5px 12px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; }
-
-        /* PROJECTS */
-        .project { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #eee; }
-        .project:last-child { border-bottom: none; }
-        .project-title { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
-        .project-meta { font-size: 0.85rem; color: #64748b; margin-bottom: 8px; }
-        
-        /* BUTTONS */
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; margin-top: 10px; font-size: 0.9rem; transition: background 0.3s;}
-        .btn:hover { background: var(--accent); }
-        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
-        .btn-outline:hover { background: var(--primary); color: white; }
-
-        footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.9rem; }
+        .hero-section {
+            padding: 80px 0 40px 0;
+        }
+        .hero-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+        }
+        .hero-links a:hover {
+            color: #0d6efd; /* Bootstrap primary blue on hover */
+        }
+        section {
+            padding-top: 60px; /* Spacing so the sticky nav doesn't cover section titles */
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>CARL JOSHUA DIMAS RICAFRENTE</h1> 
-        <p>Computer Science Student | Aspiring Cloud-Enabled Data Analyst | c.joshuaricafrente@gmail.com</p>
-        <div class="status-badge">Available for OJT (500 Hours)</div>
-    </header>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">CJR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container">
+    <!-- Hero Section -->
+    <div class="container hero-section text-center">
+        <h1 class="display-4 fw-bold">Carl Joshua D. Ricafrente</h1>
+        <p class="lead text-muted mt-3">Building scalable data pipelines, intelligent vision models, and insightful analytics.</p>
         
-        <div class="section">
-            <h2>About Me</h2>
-            <p>I am a Computer Science student passionate about turning raw data into actionable insights. As a <strong>DataCamp Scholar</strong>, I have built a strong foundation in SQL and Python, and I am currently expanding my expertise into cloud computing through <strong>AWS Cloud & AI Practitioner</strong> training.</p>
-            <p>I am actively seeking a Data Analytics OJT opportunity where I can apply my skills in data visualization, database management, and statistical analysis.</p>
-            
-            <div class="skills-grid">
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">SQL (Advanced)</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">AWS Cloud</span>
-                <span class="skill-tag">CRISP-DM</span>
-                <span class="skill-tag">Generative AI</span>
-            </div>
+        <div class="hero-links mt-4">
+            <a href="mailto:c.joshuaricafrente@gmail.com" target="_blank">Email</a> |
+            <a href="https://linkedin.com/in/cjricafrente" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/cjricafrente" target="_blank">GitHub</a> |
+            <a href="#" target="_blank">DataCamp</a> |
+            <a href="#" class="btn btn-outline-primary btn-sm ms-2">Download Resume</a>
         </div>
-
-        <div class="section">
-            <h2>Featured Contributions</h2>
-
-            <div class="project">
-                <div class="project-title">Personal Finance Grader</div>
-                <div class="project-meta">Tools: Python, Streamlit, Pandas</div>
-                <p>An interactive web application that helps users assess their financial health. Users input their income and expenses, and the app calculates a financial grade based on standard saving metrics.</p>
-                
-                <a href="https://personal-finance-grader.streamlit.app/" class="btn" target="_blank">Try the App</a>
-                
-                <a href="https://github.com/cjricafrente/personal-finance-grader" class="btn btn-outline" target="_blank">View Code</a>
-            </div>
-            
-           <div class="project">
-                <div class="project-title">Rain or Shine: Smart Commute Assistant</div>
-                <div class="project-meta">Tools: Python, API Integration, Data Logic</div>
-                <p>A real-time utility application that helps users plan their commute based on live weather conditions. By integrating external weather APIs, the tool analyzes forecasts to provide actionable travel advice (e.g., transport mode recommendations, umbrella alerts) to minimize travel disruption.</p>
-                
-                <a href="https://cjricafrente.github.io/commute-advice/" class="btn" target="_blank">Try the App</a>
-                
-                <a href="https://github.com/cjricafrente/commute-advice" class="btn btn-outline" target="_blank">View Code</a>
-            </div>
-            
-            <div class="project">
-                <div class="project-title">AI Chatbot with OpenRouter</div>
-                <div class="project-meta">Tools: Python, LLM APIs, Streamlit</div>
-                <p>A customized chatbot interface integrated with the OpenRouter API. This project demonstrates how to orchestrate calls to various Large Language Models (LLMs), manage conversation history/context, and handle API security tokens within a Python environment.</p>
-                
-                <a href="https://github.com/cjricafrente/ChatBot-Open-Router" class="btn btn-outline" target="_blank">View Code & Architecture</a>
-            </div>
-
-             <div class="project">
-                <div class="project-title">Superstore Profitablity Analysis</div>
-                <div class="project-meta">Tools: PoweBI</div>
-                <p>Using PowerBI this is an analyzation on the popular dataset "Superstore Dataset" particularly about the store's sale/discount limitation; how much is too much discount that it can result to less profit.</p>
-                
-                <a href="https://github.com/cjricafrente/superstore-profitability-analysis.git" class="btn btn-outline" target="_blank">View the Result</a>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Real-Time Hand Gesture Recognition</div>
-                <div class="project-meta">Tools: OpenCV, MediaPipe, YOLO, Custom Model Training</div>
-                <p>A computer vision application that allows users to play Rock-Paper-Scissors against an AI using hand gestures. I engineered a custom dataset by collecting and training images to recognize hand signs. The system uses OpenCV for video capture, MediaPipe for hand landmark detection, and a YOLO model for high-accuracy gesture classification in real-time.</p>
-                
-                <a href="https://github.com/cjricafrente/Rock-Paper-Scissor-Game-Version-2" class="btn btn-outline" target="_blank">View Computer Vision Code</a>
-            </div>
-
-        </div>
-
-        <div class="section" style="text-align: center;">
-            <h2>Let's Connect</h2>
-            <p>I am ready to contribute to your data team immediately.</p>
-            <br>
-            <a href="mailto:c.joshuaricafrente@gmail.com" class="btn">Email Me</a>
-            
-            <a href="https://www.linkedin.com/in/cjricafrente/" class="btn btn-outline" target="_blank">LinkedIn Profile</a>
-        </div>
-
     </div>
 
-    <footer>
-        <p>&copy; 2025 Carl Joshua D. Ricafrente. Built with GitHub Pages.</p>
-    </footer>
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="mb-4">About Me</h2>
+                <p class="fs-5 text-start">
+                    I am a Computer Science graduate from the Technological Institute of the Philippines in Manila, and I love building at the intersection of AI, Data, and Cloud computing. My journey started with training computer vision models for an autonomous RC car, which sparked my curiosity about how data is actually handled behind the scenes. That curiosity led me through a Business Analyst internship where I coded Python scripts to normalize records, and eventually to a Data Engineer internship where I built automated PySpark and Airflow pipelines. Today, my goal is to build end-to-end solutions—from scalable data infrastructure to intelligent models—that turn raw information into something that actually solves a real problem.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Bootstrap JS for mobile menu functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
