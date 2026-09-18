@@ -1,38 +1,56 @@
-/* Vertical Timeline Styles */
-        .timeline {
-            position: relative;
-            border-left: 2px solid #dee2e6; /* Light gray line */
-            margin-left: 20px;
-            padding-left: 30px;
-        }
-        .timeline-item {
-            position: relative;
-            margin-bottom: 3rem;
-        }
-        /* The blue dot on the timeline */
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -37px; /* Pulls the dot perfectly over the border line */
-            top: 4px;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background-color: #0d6efd; /* Bootstrap primary blue */
-            border: 2px solid #fff;
-        }
-        .timeline-date {
-            font-size: 0.9rem;
-            color: #6c757d;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.5rem;
-        }
-        .timeline-content ul {
-            padding-left: 1.1rem;
-        }
-        .timeline-content li {
-            margin-bottom: 0.5rem;
-            color: #495057;
-        }
+/* -- CSS Variables for Theming -- */
+:root {
+    --bg-color: #f8f9fa;       /* Soft off-white */
+    --text-color: #212529;     /* Dark charcoal text */
+    --card-bg: #ffffff;        /* Pure white for cards */
+    --accent-navy: #0a192f;    /* Your professional Navy Blue anchor */
+    --border-color: #dee2e6;
+}
+
+/* When Dark Mode is toggled on, these colors replace the ones above */
+[data-theme="dark"] {
+    --bg-color: #121212;       /* Deep charcoal background */
+    --text-color: #e0e0e0;     /* Soft light gray text */
+    --card-bg: #1e1e1e;        /* Dark gray for cards */
+    --border-color: #333333;
+}
+
+/* -- Applying the Variables -- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* The transition property makes the color swap fade smoothly over 0.3 seconds instead of blinking instantly */
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Styling the Navbar with Navy Blue */
+.navbar {
+    background-color: var(--accent-navy) !important;
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* Forces white text on the navy background */
+}
+
+/* Cards and Modals */
+.card, .modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color) !important;
+}
+
+/* Modal Headers */
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--accent-navy);
+    border-color: var(--accent-navy);
+}
+.btn-primary:hover {
+    background-color: #003366; /* Slightly lighter navy when hovering */
+}
