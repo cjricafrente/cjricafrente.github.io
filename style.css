@@ -1,0 +1,38 @@
+/* Vertical Timeline Styles */
+        .timeline {
+            position: relative;
+            border-left: 2px solid #dee2e6; /* Light gray line */
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        /* The blue dot on the timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px; /* Pulls the dot perfectly over the border line */
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #0d6efd; /* Bootstrap primary blue */
+            border: 2px solid #fff;
+        }
+        .timeline-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+        .timeline-content ul {
+            padding-left: 1.1rem;
+        }
+        .timeline-content li {
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
