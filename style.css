@@ -4,6 +4,10 @@ body {
     color: #212529; /* Dark gray text for readability */
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 /* Plain Navy Blue Navigation Bar */
 .navbar {
     background-color: #0a192f !important;
